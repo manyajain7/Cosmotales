@@ -161,17 +161,16 @@ const feedbackEl = document.getElementById('feedback');
 const nextBtn = document.getElementById('next-btn');
 const scoreSummary = document.getElementById('score-summary');
 const playAgainBtn = document.getElementById('play-again-btn');
-const mascot = document.getElementById('mascot');
 
 function shuffle(array) {
   return array.sort(() => Math.random() - 0.5);
 }
 
 function startQuiz() {
+  console.log("✅ startQuiz() is running");
   selected = shuffle([...questions]).slice(0, 5);
   currentQuestion = 0;
   score = 0;
-  mascot.style.transform = "scale(1)";
   questionEl.style.display = "block";
   optionsEl.style.display = "block";
   feedbackEl.style.display = "block";
@@ -186,7 +185,7 @@ function loadQuestion() {
   optionsEl.innerHTML = "";
   feedbackEl.textContent = "";
   nextBtn.style.display = "none";
-  mascot.style.transform = "scale(1)";
+
 
   q.options.forEach(option => {
     const btn = document.createElement("button");
@@ -199,7 +198,7 @@ function loadQuestion() {
 function checkAnswer(button, isCorrect) {
   feedbackEl.textContent = isCorrect ? "✅ Correct!" : `❌ Wrong! Answer: ${selected[currentQuestion].answer}`;
   feedbackEl.style.color = isCorrect ? "#00ff99" : "#ff6666";
-  mascot.style.transform = isCorrect ? "scale(1.3) rotate(0deg)" : "rotate(15deg) scale(1.1)";
+ 
   if (isCorrect) score++;
   Array.from(optionsEl.children).forEach(btn => btn.disabled = true);
   nextBtn.style.display = "inline-block";
@@ -220,13 +219,14 @@ function endQuiz() {
   feedbackEl.style.display = "none";
   nextBtn.style.display = "none";
   scoreSummary.style.display = "block";
-  mascot.style.transform = "scale(1.5)";
   scoreSummary.innerHTML = `<h3>Your Score: ${score} / ${selected.length}</h3>`;
   playAgainBtn.style.display = "inline-block";
 }
 
-playAgainBtn.onclick = () => startQuiz();
-startQuiz();
+document.addEventListener("DOMContentLoaded", () => {
+  playAgainBtn.onclick = () => startQuiz();
+  startQuiz();
+});
 
 // ✅ Drawing on Canvas (like MS Paint)
 const paintCanvas = document.getElementById('paintCanvas');
@@ -296,5 +296,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+
+
 
 
