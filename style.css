@@ -323,21 +323,7 @@ footer {
   background-color: #0099ff;
 }
 
-#mascot {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  width: 80px;
-  z-index: 1000;
-  animation: float 4s ease-in-out infinite;
-  transition: transform 0.3s ease;
-}
 
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
-}
 
 .creator-section {
   background-color: #111b2a;
@@ -600,3 +586,12 @@ footer {
 .close-btn:hover {
   transform: scale(1.05);
 }
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
