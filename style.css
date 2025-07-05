@@ -595,3 +595,37 @@ footer {
   background-position: center;
 }
 
+.info-strip {
+  background-color: #20205d; /* dark blue or match your theme */
+  color: #FFD700; /* bright yellow or any space-themed color */
+  text-align: center;
+  padding: 6px 0;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 6px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.header-nav a {
+  color: #ffd700;
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.header-nav a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px #ffd700;
+}
+.overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4); /* dark transparent overlay */
+  z-index: -1;
+}
