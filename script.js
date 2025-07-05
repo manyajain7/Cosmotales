@@ -9,7 +9,31 @@ const questions = [
   { q: "Which is the hottest planet?", options: ["Venus", "Mercury", "Mars", "Earth"], answer: "Venus" },
   { q: "First person in space?", options: ["Neil Armstrong", "Buzz Aldrin", "Yuri Gagarin", "Valentina Tereshkova"], answer: "Yuri Gagarin" },
   { q: "Which planet rotates on its side?", options: ["Uranus", "Neptune", "Mars", "Earth"], answer: "Uranus" },
-  { q: "What is a black hole?", options: ["Planet", "Star", "Void", "Singularity"], answer: "Singularity" }
+  { q: "What is a black hole?", options: ["Planet", "Star", "Void", "Singularity"], answer: "Singularity" },
+    { q: "Which planet is closest to the Sun?", options: ["Venus", "Earth", "Mercury", "Mars"], answer: "Mercury" },
+  { q: "Which planet is known as the Red Planet?", options: ["Earth", "Mars", "Jupiter", "Venus"], answer: "Mars" },
+  { q: "What do we call a group of stars that form a pattern?", options: ["Cluster", "Galaxy", "Constellation", "Orbit"], answer: "Constellation" },
+  { q: "What is Earth’s only natural satellite?", options: ["The Moon", "Phobos", "Titan", "Europa"], answer: "The Moon" },
+  { q: "Which planet has a giant storm called the Great Red Spot?", options: ["Jupiter", "Neptune", "Saturn", "Uranus"], answer: "Jupiter" },
+  { q: "Which planet has beautiful rings made of ice and rock?", options: ["Uranus", "Jupiter", "Neptune", "Saturn"], answer: "Saturn" },
+  { q: "What kind of object is the Sun?", options: ["Planet", "Moon", "Star", "Asteroid"], answer: "Star" },
+  { q: "Who was the first person to walk on the Moon?", options: ["Buzz Aldrin", "Yuri Gagarin", "Neil Armstrong", "Chris Hadfield"], answer: "Neil Armstrong" },
+  { q: "What is the name of our galaxy?", options: ["Milky Way", "Andromeda", "Whirlpool", "Star Cloud"], answer: "Milky Way" },
+  { q: "Which is the smallest planet in the solar system?", options: ["Pluto", "Mars", "Mercury", "Venus"], answer: "Mercury" },
+  { q: "True or False: All planets orbit the Sun.", options: ["True", "False"], answer: "True" },
+  { q: "Which planet is tilted so far it spins on its side?", options: ["Uranus", "Neptune", "Saturn", "Mars"], answer: "Uranus" },
+  { q: "Which planet is famous for its rings?", options: ["Neptune", "Mars", "Jupiter", "Saturn"], answer: "Saturn" },
+  { q: "What do astronauts need to breathe in space?", options: ["Oxygen tanks", "Water", "Gravity boots", "Rocket fuel"], answer: "Oxygen tanks" },
+  { q: "What is a shooting star?", options: ["A real star", "A spaceship", "A meteor", "A comet"], answer: "A meteor" },
+  { q: "What keeps the planets orbiting around the Sun?", options: ["Wind", "Gravity", "Rockets", "Light"], answer: "Gravity" },
+  { q: "Which planet is known for its tilted axis?", options: ["Mars", "Venus", "Uranus", "Jupiter"], answer: "Uranus" },
+  { q: "Which planet is covered in thick yellow clouds?", options: ["Mars", "Venus", "Jupiter", "Earth"], answer: "Venus" },
+  { q: "What is the Sun mostly made of?", options: ["Lava", "Rocks", "Gas", "Metal"], answer: "Gas" },
+  { q: "What is the name of the path a planet takes around the Sun?", options: ["Spin", "Loop", "Rotation", "Orbit"], answer: "Orbit" },
+  { q: "Which planet is farthest from the Sun?", options: ["Uranus", "Neptune", "Saturn", "Pluto"], answer: "Neptune" },
+  { q: "Which planet has the nickname 'Earth's Twin'?", options: ["Mars", "Venus", "Mercury", "Jupiter"], answer: "Venus" },
+  { q: "True or False: The Moon makes its own light.", options: ["True", "False"], answer: "False" },
+  { q: "What is the name of the robot that explored Mars?", options: ["Discovery", "Apollo", "Curiosity", "Enterprise"], answer: "Curiosity" }
 ];
 
 const planetData = {
@@ -296,8 +320,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-
-
-
 
 
