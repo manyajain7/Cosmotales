@@ -16,7 +16,19 @@
 
   <nav>
     <ul class="header-nav">
-      <li><a href="#planet-simulation">🚀 Planet Simulation</a></li>
+      <li>
+  <a href="https://docs.google.com/drawings/d/14gUVSjPN_zW3yT5zQlpxC9MdHAKDylxqdMW8CH9tQz0/edit?usp=sharing" 
+     target="_blank" 
+     rel="noopener noreferrer">
+    🪐 Build Your Own Planet
+  </a>
+</li>
+      <li>
+  <a href="planet-simulation-qr.html" target="_blank" rel="noopener noreferrer">
+    🚀 Planet Simulation
+  </a>
+</li>
+
       <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe2_ISln63KJDu5B1mdhtAZAAe0G1_DVx_19of6HUPKcppQgg/viewform?usp=header" target="_blank" rel="noopener noreferrer">⭐ Rate Us</a></li>
     </ul>
   </nav>
@@ -29,9 +41,9 @@
   </section>
 
 
-
   <section class="solar-system">
     <h2>🌞 Explore the Solar System</h2>
+    <div class="info-strip">Click the planet to learn more!</div>
     <div class="planet-grid">
       <div class="planet-card">
         <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Mercury_in_true_color.jpg" alt="Mercury" title="Mercury" />
@@ -78,49 +90,6 @@
 
 </div>
 
- <section class="planet-creator">
-  <h2>🎨 Build Your Own Planet</h2>
-
-  <div class="planet-tools">
-    <label>Planet Name:
-      <input type="text" id="planet-name" placeholder="Enter a name" />
-    </label>
-
-    <label>Choose Shape:
-      <select id="planet-shape">
-        <option value="sphere">Sphere</option>
-        <option value="cone">Cone</option>
-        <option value="donut">Donut</option>
-        <option value="pyramid">Pyramid</option>
-        <option value="cylinder">Cylinder</option>
-      </select>
-    </label>
-
-    <label>Brush Color:
-      <input type="color" id="brush-color" value="#00bfff">
-    </label>
-
-    <label>Brush Size:
-      <input type="range" id="brush-size" min="2" max="30" value="5">
-    </label>
-
-    <label>
-      <input type="checkbox" id="add-ring"> Add Ring
-    </label>
-    <label>
-      <input type="checkbox" id="add-moon"> Add Moon
-    </label>
-
-    <button id="clear-drawing">Clear</button>
-    <button id="save-planet">Save Planet</button>
-  </div>
-
-  <canvas id="planetCanvas" width="400" height="400" style="background: #fff; border: 3px solid #00e0ff; border-radius: 10px;"></canvas>
-
-
-</section>
-
-
   <section class="quiz-section" id="quiz">
   <h2>🧠 Cosmic Quiz</h2>
   <div class="quiz-card">
@@ -135,21 +104,14 @@
 
 
 
-<!-- Continuing your planet-info section -->
-<section class="planet-info" id="planet-info">
-  <h2 id="planet-name">Click a planet to learn more!</h2>
-  <p id="planet-description"></p>
-</section>
-
-
 
   <footer>
-    <p>© 2025 Cosmotales | Made with 🚀 and 💫</p>
+    <p>© 2025 Cosmotales | Made by Team Stellar Forge 💫</p>
   </footer>
 
   <!-- Background Music -->
   <audio id="bg-music" autoplay loop>
-    <source src="https://cdn.pixabay.com/download/audio/2022/10/25/audio_b8cb7a06ba.mp3?filename=space-ambient-111397.mp3" type="audio/mpeg">
+    <source src="assets/space-audio.mp3" type="audio/x-m4a">
     Your browser does not support the audio element.
   </audio>
 
@@ -240,6 +202,4 @@
 
 </body>
 </html>
-
-
 
